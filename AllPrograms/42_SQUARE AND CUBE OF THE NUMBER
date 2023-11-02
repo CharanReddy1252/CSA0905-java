@@ -1,0 +1,15 @@
+import java.util.*;
+class Squarcub
+{
+public static void main(String args[])
+{
+int square,cube,n;
+Scanner s=new Scanner(Syatem.in)
+System.out.println("enter the number:");
+n=s.nextInt();
+square=n*n;
+System.out.println("square of number:"+square);
+cube=n*n*n;
+System.out.println("cube of number:"+cube);
+}
+}
