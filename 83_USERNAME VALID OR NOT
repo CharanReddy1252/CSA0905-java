@@ -1,0 +1,21 @@
+import java.util.*;
+class Userq3
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the username:");
+String str1=s.next();
+System.out.println("enter the username:");
+String str2=s.next();
+if(str1.equals(str2))
+{
+System.out.println("valid");
+}
+else
+{
+System.out.println("not valid");
+}
+}
+}
+

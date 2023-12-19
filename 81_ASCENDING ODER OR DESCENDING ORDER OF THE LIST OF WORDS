@@ -1,0 +1,63 @@
+import java.util.*;
+class Arrworq4
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int n;
+System.out.println("enter the elements range:");
+n=s.nextInt();
+char choice;
+String a[]=new String[n];
+System.out.println("enter the words:");
+for(int i=0;i<n;i++)
+{
+a[i]=s.next();
+}
+System.out.println("enter the choice:");
+choice=s.next().charAt(0);
+int len=a.length;
+if(choice=='A'|| choice=='a')
+{
+for(int i=0;i<len;i++)
+{
+for(int j=i+1;j<len;j++)
+{
+if(a[i].compareTo(a[j])>0)
+{
+String temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+System.out.println(a[i]);
+}
+System.out.println(Arrays.toString(a));
+}
+else if(choice=='d'||choice=='D')
+{
+for(int i=0;i<len;i++)
+{
+for(int j=i+1;j<len;j++)
+{
+if(a[i].compareTo(a[j])<0)
+{
+String temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+System.out.println(a[i]);
+}
+System.out.println(Arrays.toString(a));
+}
+else
+{
+System.out.println("correct choice");
+}
+}
+}
+
+
+
+

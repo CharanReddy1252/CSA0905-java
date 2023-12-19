@@ -1,0 +1,40 @@
+import java.util.*;
+class Assign 
+{
+    	protected int m;
+    	Assign(int n1) 
+	{
+		m=n1;
+    	}
+	void display() 
+	{
+        	System.out.println("superclass: " + m);
+   	 }
+}
+class Assign1 extends Assign 
+{
+    	protected int y;
+	Assign1(int n1,int n2) 
+	{	
+		super(n1);
+		y=n2;
+    	}
+	void display() 
+	{
+		super.display();
+        	System.out.println("Superclass: " +y);
+		
+   	 }
+    	public static void main(String args[]) 
+	{
+        int a;
+        int b;
+        Scanner s=new Scanner(System.in);
+	System.out.println("enter the n1:");
+	a=s.nextInt();
+	System.out.println("enter the n2:");
+	b=s.nextInt();
+        Assign1 obj = new Assign1(a,b);
+	obj.display();
+    	}
+}

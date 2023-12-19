@@ -1,0 +1,19 @@
+import java.util.*;
+class Position
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.println("string1:");
+String s1=s.nextLine();
+int len=s1.length();
+System.out.println("p is present at index");
+for(int i=0;i<len;i++)
+{ 
+if(s1.charAt(i)=='p')
+{
+System.out.println(" "+(i+1));
+}
+}
+}
+}

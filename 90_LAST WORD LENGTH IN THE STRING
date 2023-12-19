@@ -1,0 +1,21 @@
+import java.util.*;
+class Length
+{
+public static void main(String arg[])
+{
+Scanner s=new Scanner(System.in);
+int wl=0;
+System.out.println("enter the string: ");
+String s1=s.nextLine();
+String c[]=s1.split(" ");
+if(c.length>0)
+{
+ wl=c[c.length-1].length();
+}
+else
+{
+ wl=0;
+}
+System.out.println("length is: "+ wl);
+}
+}

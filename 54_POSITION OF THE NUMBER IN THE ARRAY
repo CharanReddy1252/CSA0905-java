@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Positionnum {
+    	public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n=s.nextInt();
+	int[] a=new int[n];
+        for (int i=0;i<n;i++) 
+	{
+            	System.out.print("Enter number " + (i + 1) + ": ");
+          	a[i]=s.nextInt();
+        }
+        System.out.print("Enter the number to find in the array: ");
+        int k=s.nextInt();
+        int position = -1;
+        for (int i=0;i<n;i++) {
+            if (a[i]==k) {
+                position = i;
+                break;
+            }
+        }
+        if (position != -1) 
+	{
+            System.out.println("Number " + k+ " found at position: "+position);
+        } else {
+            System.out.println("Number "+k+ " not found in the array.");
+        }
+    }
+}

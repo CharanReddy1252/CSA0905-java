@@ -1,0 +1,38 @@
+import java.util.*;
+class Vowelconq7
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.println("enter the sytring:");
+String str=s.nextLine();
+int v=0,c=0;
+int n=str.length();
+char vow[]=new char[n];
+char con[]=new char[n];
+char a[]=new char[n];
+for(int i=0;i<n;i++)
+{
+a[i]=str.charAt(i);
+if(a[i]=='a'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='e'||a[i]=='A'||a[i]=='I'||a[i]=='O'||a[i]=='U'||a[i]=='E')
+{
+vow[v]=a[i];
+v++;
+}
+else
+{
+con[c]=a[i];
+c++;
+}
+}
+System.out.println("con");
+for(int i=0;i<c;i++)
+{
+System.out.println(con[i]);
+}
+for(int i=0;i<v;i++)
+{
+System.out.println(vow[i]);
+}
+}
+}

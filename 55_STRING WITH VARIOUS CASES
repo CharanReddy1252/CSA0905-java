@@ -1,0 +1,33 @@
+import java.util.*;
+class S1
+{
+public static void main(String args[])
+{
+String s1="I Love java";
+String s2="java";
+String s3="JAVA";
+String x=s1.toLowerCase();
+System.out.println(x);
+String y=s1.toUpperCase();
+System.out.println(y);
+String t=s1.replace('o','i');
+System.out.println(t);
+String e=s1.substring(2,11);
+System.out.println(e);
+String r=s1.substring(2,6);
+System.out.println(r);
+int w=s1.indexOf('L');
+System.out.println(w);
+int u=s1.length();
+System.out.println(u);
+boolean s=s2.equals(s3);
+System.out.println(s);
+boolean q=s2.equalsIgnoreCase(s3);
+System.out.println(s);
+char o=s1.charAt(5);
+System.out.println(o);
+int l=s2.compareTo(s3);
+System.out.println(l);
+}
+}
+

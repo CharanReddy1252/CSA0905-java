@@ -1,0 +1,22 @@
+import java.util.*;
+class Interest
+{
+public static void main(String arg[])
+{
+Scanner input = new Scanner(System.in);
+int pri=input.nextInt();
+int year=input.nextInt();
+int age=input.nextInt();
+double interest=0.0;
+if(age>60)
+{
+ interest=(pri*year*0.12)/100;
+ System.out.print(interest);
+}
+else
+{
+ interest=(pri*year*0.1)/100;
+ System.out.print(interest);
+}
+}
+}

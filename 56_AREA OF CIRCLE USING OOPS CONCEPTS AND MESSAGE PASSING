@@ -1,0 +1,26 @@
+import java.util.*;
+class Area1
+{
+int r;
+double ar;
+Scanner s=new Scanner(System.in);
+void get()
+{
+r=s.nextInt();
+}
+void calculate()
+{
+ar=3.14*r*r;
+}
+void display()
+{
+System.out.println("output="+ar);
+}
+public static void main(String args[])
+{
+Area1 obj=new Area1();
+obj.get();
+obj.calculate();
+obj.display();
+}
+}

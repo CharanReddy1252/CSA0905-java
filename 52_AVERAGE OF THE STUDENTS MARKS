@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Average 
+{
+    	public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+	System.out.print("Enter the number of students: ");
+        int noofstudents=s.nextInt();
+	System.out.print("Enter the number of subjects: ");
+        int noofsubjects=s.nextInt();
+	int[][] stdmarks=new int[noofstudents][noofsubjects];
+	for(int i=0;i<noofstudents;i++) 
+	{
+            	System.out.println("Enter details for student " + (i + 1) + ":");
+            	for(int j=0;j<noofsubjects;j++) 
+		{
+                System.out.print("Enter marks for subject " + (j + 1) + ": ");
+                stdmarks[i][j]=s.nextInt();
+           	}
+        }
+	for(int i=0;i<noofstudents;i++) 
+	{
+            	int total=0;
+            	for(int j=0;j<noofsubjects;j++) 
+		{
+                	total+=stdmarks[i][j];
+            	}
+            	double average=(double)total/noofsubjects;
+            	System.out.println("Average marks for student " + (i + 1) + ": " + average);
+        }
+    }
+}

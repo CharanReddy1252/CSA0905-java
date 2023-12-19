@@ -1,0 +1,31 @@
+import java.util.*;
+class Athread implements Runnable
+{
+	public void run()
+	{
+		for(int i=1;i>=10;i++)
+		{
+			System.out.println("i X 13 = "+i*13);
+		}
+	}
+}
+class Bthread implements Runnable
+{ 
+	public void run()
+	{
+		for(int i=1;i>=10;i++)
+		{
+			System.out.println("i X 17 = "+i*17);
+		}
+	}
+public static void main(String args[])
+{ 	
+	Athread a=new Athread();
+	Thread t1=new Thread(a);
+	t1.start();
+	Bthread b=new Bthread();
+	Thread t2=new Thread(b);
+	t2.start();       
+}
+	
+}
